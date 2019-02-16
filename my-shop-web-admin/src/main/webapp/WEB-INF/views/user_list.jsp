@@ -122,7 +122,7 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th><input type="checkbox" class="minimal" checked="" style="position: absolute; opacity: 0;"></th>
+                                <th><input type="checkbox" class="minimal" /></th>
                                 <th> ID</th>
                                 <th>用户名</th>
                                 <th>手机号</th>
@@ -134,7 +134,7 @@
                             <tbody>
                             <c:forEach items="${tbUsers}" var="tbUser">
                                 <tr>
-                                    <th><input type="checkbox" class="minimal" checked="" style="position: absolute; opacity: 0;"></th>
+                                    <th><input type="checkbox" class="minimal" /></th>
                                     <td>${tbUser.id}</td>
                                     <td>${tbUser.username}</td>
                                     <td>${tbUser.phone}</td>
@@ -170,3 +170,10 @@
 <jsp:include page="../includes/footer.jsp"/>
 
 </body>
+<script>
+    // 激活 iCheck
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass   : 'iradio_minimal-blue'
+    });
+</script>
