@@ -37,7 +37,8 @@
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
-                        <form:form id="inputForm" class="form-horizontal" action="/user/save" method="post" modelAttribute="tbUser">
+                        <%--@elvariable id="tbUser" type="com.dxb.my.shop.domain.TbUser"--%>
+                        <form:form modelAttribute="tbUser" id="inputForm" class="form-horizontal" action="/user/save" method="post" >
                             <div class="box-body">
 
                                 <c:if test="${baseResult!=null}">
