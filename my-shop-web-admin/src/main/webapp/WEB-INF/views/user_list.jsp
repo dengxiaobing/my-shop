@@ -50,6 +50,7 @@
                             <h3 class="box-title">高级搜索</h3>
                         </div>
 
+                        <%--@elvariable id="tbUser" type="com.dxb.my.shop.domain.TbUser"--%>
                         <form:form cssClass="form-horizontal" action="/user/search" method="post"
                                    modelAttribute="tbUser">
                             <div class="box-body">
